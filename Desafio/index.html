@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <h1> Suite Store</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+        <div class="consulta">
+            <div class="compra">
+                <select class="select" name="Products" id="Products">
+                    <option value="">Product</option>
+                </select>
+            </div>
+            <div class="Inputs">
+                <Input class="Input-Amount" id="inp-amount" type="number" placeholder="Amount">
+                <Input class="Input-Tax" type="number" placeholder="Tax">
+                <Input class="Input-price" type="text" placeholder="Price">
+            </div>
+            <div>
+                <button class="botao">Add Product</button>
+            </div>
+        </div>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tbl-mr">Product</th>
+                        <th class="tbl-mn">Unit price</th>
+                        <th class="tbl-mn">Amount</th>
+                        <th class="tbl-mn">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tbl-mr">Rice</td>
+                        <td class="tbl-mn">$20.00</td>
+                        <td class="tbl-mn">2</td>
+                        <td class="tbl-mn">40.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tbl-mr">Beans</td>
+                        <td class="tbl-mn">$9.00</td>
+                        <td class="tbl-mn">1</td>
+                        <td class="tbl-mn">9.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                <label class="tax-t" for="Tax">Tax:</label>
+                <Input class="Input-t" type="text" placeholder="$6.50"><br>
+                <label class="total-t" for="Total">Total:</label>
+                <Input class="Input-t" type="text" placeholder="$32.50"><br>
+                <button class="btm1-t">Cancel</button>
+                <button class="btm2-t">Finish</Button>
+            </div>
+        </div> 
+        </div>
+    </main>
+</body>
+</html>
+<script >
+    const tempClient = {
+        nome: 'phelipi',
+        tax: 15,
+        proco: 100
+    }
+    const creatClient = (client) => {
+        const db_client = JSON.parse(localStorage.get)
+        localStorage.setItem('db_client', JSON.stringify(client))
+    }
+
+</script>

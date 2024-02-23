@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <h1> Suite Store</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+        <div class="consulta">
+            <div class="compra" id="form">
+                <select class="select" name="category" id="category">
+                    <option value="">Food</option>
+                </select>
+            </div>
+            <Input class="Input-Amount" type="text" id="inp-name" placeholder="Product name">
+            <Input class="Input-Tax" type="number" id="inp-amount" placeholder="Amount">
+            <Input class="Input-price" type="number" id="inp-price" placeholder="Price">
+                <button class="botao" id="btn-produto">Add Product</button>
+        </div>
+        <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th class="tbl-mr">Code</th>
+                    <th class="tbl-mn">Product</th>
+                    <th class="tbl-mn">Amount</th>
+                    <th class="tbl-mn">Price</th>
+                    <th class="tbl-mn">Category</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-produto">
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
+<script></script>
